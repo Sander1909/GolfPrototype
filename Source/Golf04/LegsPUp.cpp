@@ -15,13 +15,6 @@ ALegsPUp::ALegsPUp()
 void ALegsPUp::BeginPlay()
 {
 	Super::BeginPlay();
-
-	CollisionBox = this->FindComponentByClass<USphereComponent>();
-
-	/*if (CollisionBox)
-	{
-		CollisionBox->OnComponentBeginOverlap.AddDynamic(this, &ALegsPUp::OnOverlap);
-	}*/
 	
 }
 
@@ -31,11 +24,3 @@ void ALegsPUp::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 }
-
-/*void ALegsPUp::OnOverlap(UPrimitiveComponent* OverlappedComponent, AActor *OtherActor,
-	UPrimitiveComponent *OtherComponent, int32 OtherBodyIndex,
-	bool bFromSweep, const FHitResult &SweepResult)
-{
-	//empty
-}*/
-
